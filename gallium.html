@@ -18,29 +18,27 @@
     <link href="css/style.css" rel="stylesheet">
 
     <!-- Custom fonts -->
-    <!-- TODO include font awesome -->
+    <link href="font-awesome/css/fontawesome-all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Cabin:400,700|Lato:300,300i,400" rel="stylesheet">
 
   </head>
-
 
   <body id="page-top">
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="index.html#page-top">Randy Panopio</a>
+        <a class="navbar-brand js-scroll-trigger" href="index.html">Randy Panopio</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fa fa-bars"></i>
+          <i class="fas fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="index.html#projects">Projects</a>
+              <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="index.html#about">About</a>
+              <a class="nav-link js-scroll-trigger" href="#about">About</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="styleguide.html">Styleguide</a>
@@ -104,7 +102,7 @@
 
         <div class="row">
           <div class="col-md-2 content-row">
-            <h3>Summary</h3>
+            <h3>Concept</h3>
           </div>
           <div class="col-lg-8 content-row radio-content">
             <p>
@@ -263,11 +261,16 @@
 
     <!-- Footer -->
     <footer>
-       <div class="container text-center">
+       <div class="container text-center ">
         <ul class="site-footer-links">
+          <div class="row">
+            <div class="col-lg-8 content-row mx-auto">
+              <a href="index.html#projects" class="btn btn-return btn-lg">Return to Projects</a>
+            </div>
+          </div>
           <ul class="social">
-            <li class="linkedin"><a href="https://www.linkedin.com/in/randy-panopio-29bb47109/"><i class="fa fa-linkedin-square fa-lg"></i></a></li>
-            <li class="github"><a href="https://github.com/randypanopio"><i class="fa fa-github"></i></a></li>
+            <li class="linkedin"><a href="https://www.linkedin.com/in/randy-panopio-29bb47109/"><i class="fab fa-linkedin"></i></a></li>
+            <li class="github"><a href="https://github.com/randypanopio"><i class="fab fa-github"></i></a></li>
           </ul>
               <li class="copyright">&copy; 2018 Randy Panopio<span></span></li>
         </ul>
@@ -275,7 +278,10 @@
     </footer>
 
     <!-- Core JS Libraries - Bootstrap core JavaScript & Jquery  etc. -->
+    <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-easing.min.js"></script>
+
 
     <!-- Custom script -->
     <script src="js/script.js"></script>
