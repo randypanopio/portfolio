@@ -28,20 +28,20 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="index.html">Randy Panopio</a>
+      <a class="navbar-brand js-scroll-trigger" href="index.html#page-top">Randy Panopio</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fas fa-bars"></i>
-      </button>
+          <i class="fas fa-bars"></i>
+        </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+            <a class="nav-link js-scroll-trigger" href="index.html#projects">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            <a class="nav-link js-scroll-trigger" href="index.html#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="styleguide.html">Styleguide</a>
+            <a class="nav-link js-scroll-trigger" href="index.html#contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -69,10 +69,34 @@
                 "btn and btn-default"
               </p>
             </div>
+
             <div class="col-lg-4 mx-auto">
               <h3>Sample code:</h3>
                 <code>&lt;a&gt;Example Button&lt;/a&gt;</code>
             </div>
+            <div class="col-lg-4 mx-auto">
+              <div class="">
+                <button class="btn btn-default btn-sm btn-anim-i">
+                  <span>
+                    Button
+                    <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                  </span>
+                </button>
+              </div>
+
+
+            </div>
+            <div class="col-lg-4 mx-auto">
+              <p>
+                "btn-anim-1" or "btn-icon"
+              </p>
+
+            </div>
+            <div class="col-lg-4 mx-auto">
+                <code>&lt;button class="btn btn-default btn-sm btn-anim-i"&gt;&lt;span&gt;Button&lt;i class="fas fa-chevron-right" aria-hidden="true"&gt;&lt;/i&gt;&lt;/span&gt;&lt;/button&gt;</code>
+
+            </div>
+
             <div class="col-lg-4 mx-auto">
               <div class="mx-auto extra-padding">
                 <a href="#" class="btn btn-circle js-scroll-trigger btn-bottom">
@@ -135,19 +159,20 @@
           <div class="row">
             <div class="col-lg-4 mx-auto">
               <h3>Rendered element:</h3>
-              <div class="input-style">
-                Search: <input type="text" name="search">
-              </div>
+              <form class="form-wrap validate-form mx-auto">
+                <div class="input-wrap validate-input" data-validate="Name is needed!">
+                  <input class="input-style" type="text" name="name">
+                  <span class="focus-input2" data-placeholder="NAME"></span>
+                </div>
+              </form>
             </div>
             <div class="col-lg-4 mx-auto">
               <h3>CSS selector:</h3>
-              <p>".input-style"</p>
+              <p>".form-wrap" and ".input-style"</p>
             </div>
             <div class="col-lg-4 mx-auto">
               <h3>Sample code:</h3>
-              <code>&lt;div class="input-style"&gt;<br />
-                Search: &lt;input type="text" name="search"&gt;<br />
-              &lt;/div&gt;</code>
+              <code>&lt;div class="input-wrap validate-input" data-validate="Name is needed!"&gt;<br />&lt;input class="input-style" type="text" name="name"&gt;<br />&lt;span class="focus-input2" data-placeholder="NAME"&gt;&lt;/span&gt;<br />&lt;/div&gt;</code>
             </div>
         </div>
 
@@ -306,6 +331,50 @@
 
       <section class="row">
         <div class="col-lg-2 content-row">
+          <h2>Footer Styling</h2>
+        </div>
+        <div class="col-lg-10 content-row">
+          <div class="row">
+            <div class="col-lg-4 mx-auto">
+              <h3>Rendered element:</h3>
+                  <ul class="social">
+                    <li class="linkedin"><a href="https://www.linkedin.com/in/randy-panopio-29bb47109/"><i class="fab fa-linkedin"></i></a></li>
+                    <li class="github"><a href="https://github.com/randypanopio"><i class="fab fab fa-github-square"></i></a></li>
+                  </ul>
+            </div>
+            <div class="col-lg-4 mx-auto">
+              <h3>CSS selector:</h3>
+              <p>"social"</p>
+            </div>
+            <div class="col-lg-4 mx-auto">
+              <h3>Sample code:</h3>
+              <code>&lt;li class="github"&gt;&lt;a href="https://github.com/randypanopio"&gt;&lt;i class="fab fab fa-github-square"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;</code>
+            </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 mx-auto">
+            <h3>Rendered element:</h3>
+            <ul class="social">
+            </ul>
+            <li class="copyright"><span>&bull;</span><a class="copyright-link" href="styleguide.html">Styleguide</a><span>&bull;</span><a class="copyright-link" href="https://github.com/randypanopio/portfolio">Repo</a></li>
+          </ul>
+          </div>
+          <div class="col-lg-4 mx-auto">
+            <h3>CSS selector:</h3>
+            <p>"social" and "copyright"</p>
+          </div>
+          <div class="col-lg-4 mx-auto">
+            <h3>Sample code:</h3>
+            <code>&lt;a class="copyright-link" href="styleguide.html"&gt;Styleguide&lt;/a&gt;&lt;span&gt;&amp;bull;&lt;/span&gt;</code>
+          </div>
+      </div>
+
+      </section>
+
+
+      <section class="row">
+        <div class="col-lg-2 content-row">
           <h2>Grid Structure</h2>
         </div>
         <div class="col-lg-10 content-row">
@@ -381,11 +450,11 @@
         </div>
         <ul class="social">
           <li class="linkedin"><a href="https://www.linkedin.com/in/randy-panopio-29bb47109/"><i class="fab fa-linkedin"></i></a></li>
-          <li class="github"><a href="https://github.com/randypanopio"><i class="fab fa-github"></i></a></li>
+          <li class="github"><a href="https://github.com/randypanopio"><i class="fab fab fa-github-square"></i></a></li>
         </ul>
-            <li class="copyright">&copy; 2018 Randy Panopio<span></span></li>
+        <li class="copyright">&copy; 2018 Randy Panopio<span>&bull;</span><a class="copyright-link" href="styleguide.html">Styleguide</a><span>&bull;</span><a class="copyright-link" href="https://github.com/randypanopio/portfolio">Repo</a></li>
       </ul>
-     </div>
+    </div>
   </footer>
 
   <!-- Core JS Libraries - Bootstrap core JavaScript & Jquery  etc. -->
