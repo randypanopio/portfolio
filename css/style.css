@@ -273,8 +273,7 @@ p {
 
 
 .site-footer-links {
- font-size: 12px;
- font-size: 1rem;
+ font-size: 14px;
  line-height: 1.5;
  color: #777;
  padding-top: 20px;
@@ -291,6 +290,7 @@ p {
 }
 
 .copyright a{
+   font-size: 14px;
   color: #666;
 }
 
@@ -454,6 +454,34 @@ a:focus, a:hover {
   background-size: cover;
 }
 
+.masthead-lookbook{
+
+  display: table;
+  width: 100%;
+  height: auto;
+  padding: 200px 0;
+
+  color: white;
+  background: url("../img/lookbookhero.jpg") no-repeat bottom center scroll;
+  background-color: #333333;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.masthead-lookbook h1{
+  font-family: 'Lato';
+  font-weight: 300;
+  text-align: justify;
+}
+
+.masthead-lookbook p{
+  font-family: 'Lato';
+  font-weight: 300;
+  text-align: justify;
+}
+
 .masthead-gallium{
   display: table;
   width: 100%;
@@ -490,7 +518,7 @@ a:focus, a:hover {
 }
 
 .masthead .intro-body .brand-heading {
-  /* font-size: 50px; */
+  font-size: 50px;
 }
 
 .masthead .intro-body .intro-text {
@@ -523,6 +551,12 @@ a:focus, a:hover {
   border: 2px solid white;
   border-radius: 100% !important;
   background: transparent;
+}
+
+@media (max-width: 540px) {
+  .btn-circle {
+    display: none;
+  }
 }
 
 .btn-circle:focus, .btn-circle:hover {
@@ -715,7 +749,8 @@ img::-moz-selection {
 .input-style {
   display: block;
   width: 100%;
-
+  font-family: 'Lato';
+  font-weight: 300;
   font-size: 15px;
   color: #555555;
   line-height: 1.2;
