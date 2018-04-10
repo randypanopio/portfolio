@@ -472,6 +472,10 @@ a:focus, a:hover {
 }
 
 .btn-bottom{
+  /* fix ie */
+  left: 50%;
+  right: 50%;
+  justify-content: center;
   position: absolute;
   margin-bottom: 2%;
   bottom: 0;
