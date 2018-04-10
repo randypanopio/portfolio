@@ -40,3 +40,31 @@
   $(window).scroll(navbarCollapse);
 
 })(jQuery); // End of use strict
+
+
+
+
+// When the user scrolls down half of the browser's screen from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  // half of the screen
+  var h = window.innerHeight - (window.innerHeight/2);
+
+
+  // hides button on small screens
+    if (document.body.scrollTop > h || document.documentElement.scrollTop > h) {
+        document.getElementById("scroll-top-btn").style.display = "block";
+    } else {
+        document.getElementById("scroll-top-btn").style.display = "none";
+    }
+}
+// hides button on small screen
+// jQuery(window).resize(function () {
+//     var w = jQuery(document).width;
+//     if (w > 540) {
+//         document.getElementById("scroll-top-btn").style.display = "block";
+//     } else {
+//         document.getElementById("scroll-top-btn").style.display = "none";
+//     }
+// });
