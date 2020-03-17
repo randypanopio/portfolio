@@ -59,12 +59,5 @@ function scrollFunction() {
         document.getElementById("scroll-top-btn").style.display = "none";
     }
 }
-// hides button on small screen
-// jQuery(window).resize(function () {
-//     var w = jQuery(document).width;
-//     if (w > 540) {
-//         document.getElementById("scroll-top-btn").style.display = "block";
-//     } else {
-//         document.getElementById("scroll-top-btn").style.display = "none";
-//     }
-// });
+
+//scroll button animation
